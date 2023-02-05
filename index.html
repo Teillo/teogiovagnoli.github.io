@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.V. Teo Giovagnoli</title>
-    <link rel="icon" type="image/x-icon" href="/TP-HTML/argentina.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="argentina.ico"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body> 
+    <header>   
+        <div id="modoNoche"> 
+            <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+            <p class="small-txt">Modo oscuro</p>
+         </div>
+    </header>
 
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>
-    
-    <p id="demo"></p>
 
     <div id="Nombre">
         <img src="img/Teo.jpeg" alt="Imagen propia" height="300px"    width="500px">
-        <h2>Teo Giovagnoli</h2>
-        <p>Rosario, Santa Fe - Argentina</p>
-        <br>
+        <div  id="presentacion">
+            <h2>Teo Giovagnoli</h2>
+            <p>Rosario, Santa Fe - Argentina</p>
+        </div>
         <br>
 
         <fieldset>
@@ -67,5 +76,6 @@
     
     </div>
 
+<script src="script.js"></script>
 </body>
 </html> 
