@@ -5,10 +5,6 @@
         color: #252525;
         transition: 0.5s ease-in-out;
     }
-    .small-txt{
-        margin: 20px 0;
-        font-family: 'Anton', sans-serif;
-    }
     #presentacion {
         font-family: 'Anton', sans-serif;
     }
@@ -31,10 +27,12 @@
         flex-direction: column;
         align-items: flex-end;
     }
-    #modoNoche p{
-        margin: 0%;
+    .small-txt{
+        margin-top: 0%;
+        font-family: 'Anton', sans-serif;
     }
-    input[type="checkbox"] {
+    
+    #modoNoche input[type="checkbox"] {
         position: relative;
         width: 40px;
         height: 20px;
@@ -46,11 +44,11 @@
         transition: 0.5s ease;
     }
 
-    input[type="checkbox"]:checked {
+    #modoNoche input[type="checkbox"]:checked {
         background-color: #04ac2e;
     }
 
-    input[type="checkbox"]::before {
+    #modoNoche input[type="checkbox"]::before {
         content: '';
         position: absolute;
         width: 16px;
@@ -62,7 +60,7 @@
         transition: 0.7s ease;
     }
 
-    input[type="checkbox"]:checked::before {
+    #modoNoche input[type="checkbox"]:checked::before {
         transform: translateX(20px);
     }
 
